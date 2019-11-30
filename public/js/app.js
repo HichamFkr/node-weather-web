@@ -1,4 +1,4 @@
-console.log('client side js file is runing')
+// console.log('client side js file is runing')
 
 // fetch('http://puzzle.mead.io/puzzle').then((response)=>{
 //     response.json().then((data)=>{
