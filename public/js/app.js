@@ -22,7 +22,7 @@ WeatherForm.addEventListener('submit',(e)=>{
     forc.textContent = ' '
 
     
-    fetch('http://localhost:3000/weather?adress='+search).then((response)=>{
+    fetch('/weather?adress='+search).then((response)=>{
     response.json().then((data)=>{
         if(data.error){
             console.log(data.error)

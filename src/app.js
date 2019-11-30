@@ -4,6 +4,7 @@ const hbs = require('hbs')
 const forecast = require('./util/forecast')
 //const geocode = require('./util/geocode')
 const app = express()
+const port = process.env.PORT || 3000
 
 // Setup path for Express config
 const public = path.join(__dirname, '../public')
@@ -69,6 +70,6 @@ app.get('*', (req, res)=>{
     })
 })
 
-app.listen(3000, ()=>{
-    console.log('Server is runing on 3000')
+app.listen(port, ()=>{
+    console.log('Server is runing on '+port)
 })
